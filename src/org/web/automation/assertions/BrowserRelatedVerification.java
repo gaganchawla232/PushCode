@@ -13,6 +13,10 @@ public class BrowserRelatedVerification {
 		Screen.takeScreenshot(driver, name);
 		Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase(expectedResult), "Error-URL is not matched");
 		}
+	public static void VerifyURL(WebDriver driver,String expectedResult,String name) throws IOException {
+		Screen.takeScreenshot(driver, name);
+		Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase(expectedResult), "Error-URL is not matched");
+		}
 	
 		public static void Verifytitle(WebDriver driver,String expectedResult,String name) throws IOException {
 		Screen.takeScreenshot(driver, name);
